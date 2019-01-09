@@ -1,0 +1,38 @@
+<div class="row">
+  <form class="col-md-12" #customerRegistrationForm="ngForm" (ngSubmit)="onSubmit(customerRegistrationForm)">
+    <div class="row">
+        <div class="col-md-6">
+          <label for="FirstName">First Name</label>
+          <input type="text" class="form-control" placeholder="Enter First Name" name="firstname" [(ngModel)]="customer.firstname" required>
+        </div>
+        <div class="col-md-6">
+            <label for="LastName">Last Name</label>
+            <input type="text" class="form-control" placeholder="Enter Last Name" name="lastname" [(ngModel)]="customer.lastname">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <label for="Address">Address</label>
+              <input type="text" class="form-control" placeholder="Enter Address" name="address" [(ngModel)]="customer.address">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <label for="ContactNumber">Contact Number</label>
+              <input type="text" class="form-control" placeholder="Enter Contact Number" name="contactnumber" [(ngModel)]="customer.contactnumber">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <label for="Email">Email</label>
+              <input type="text" class="form-control" placeholder="Enter Email" name="email" [(ngModel)]="customer.email">
+          </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+      </div>           
+  </form>
+</div>
